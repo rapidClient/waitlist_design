@@ -9,11 +9,3 @@ To run perform the following operations;
 # yarn run dev
 
 note: For this project yarn, this is very important to remember.
-
-
-Thing to do today;
-1. Navigation
-2. Breaking down into components
-3. Animations
-4. Push to repos
-5. Host on netlify

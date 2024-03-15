@@ -1,16 +1,26 @@
 import {images} from "../assets"
 import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const Navbar = ()=> {
+   const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
-      <nav className='flex justify-between items-center px-8 md:px-10 lg:px-24 py-3'>
-        <Link to={'/'}>
-          <img src={images?.logo} className='cursor-pointer lg:w-[12rem] lg:h-[8rem] md:h-[5rem] md:w-[9rem]' alt=''/>
+      <nav className='fixed -top-1 left-0 right-0 flex bg-slate-100 home-container shadow-sm justify-between items-center px-6 md:px-10 lg:px-24 z-40 py-3 md:py-4'>
+        <Link to={'/'} onClick={scrollToTop}>
+          <img src={images?.logo} className='cursor-pointer lg:w-[180px] lg:h-[60px] md:h-[50px] md:w-[180px] h-[40px] w-[130px]' alt='logo'/>
         </Link>
         <div className='flex justify-between items-center gap-12'>
-          <Link to={'/about'}  className='cursor text-[#001547] text-[16px] md:text-[24px] font-medium'>About Us</Link>
-        <button className='hidden md:block bg-[#004CFF] text-[#FFFFFF] font-semibold text-[20px] px-5 py-4 rounded-lg'>Join the Waitlist!</button>
+          <Link to={'/about'}  className='cursor-pointer text-[#001547] text-base md:text-lg font-medium' onClick={scrollToTop}>About Us</Link>
+          <HashLink smooth to="/#join_section">
+            <button className='hidden md:block bg-[#004CFF] text-[#FFFFFF] font-semibold text-base px-5 py-3 rounded-lg'>Join the Waitlist!</button>
+          </HashLink>
         </div>
       </nav>
       <hr />

@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import '../App.css'
 import Form from '../components/Form'
 import HeroSetion from '../components/HeroSection/HeroSetion'
@@ -8,8 +7,8 @@ function Home() {
   return (
     <Layout>
       <main className='home-container bg-[#F2F6FF]'>
-        <section className='px-8 md:px-10 lg:px-24 pb-20'>
-          <HeroSetion />
+        <section className='px-6 md:px-10 lg:px-24 pb-20'>
+            <HeroSetion />
           <Form />
         </section>
       </main>

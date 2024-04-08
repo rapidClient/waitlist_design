@@ -1,4 +1,3 @@
-// import { useEffect } from 'react';
 import {images} from "../assets"
 import { Link } from "react-router-dom"
 
@@ -30,7 +29,7 @@ const Footer = () => {
         <Link to='/' onClick={scrollToTop}>
           <img src={images?.whiteLogo}  className='cursor-pointer lg:w-[180px] lg:h-[60px] md:h-[50px] md:w-[180px] h-[40px] w-[130px]'alt="Logo" />
         </Link>
-        <p className='text-[#596480] font-semibold text-[16px] md:text-[20px] leading-8 mt-6'>&copy; Copyright 2023</p>
+        <p className='text-[#596480] font-semibold text-[16px] md:text-[20px] leading-8 mt-6'>&copy; Copyright 2024</p>
       </div>
     </footer>
   );

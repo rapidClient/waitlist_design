@@ -17,7 +17,6 @@ const Navbar = ()=> {
           <img src={images?.logo} className='cursor-pointer lg:w-[180px] lg:h-[60px] md:h-[50px] md:w-[180px] h-[40px] w-[130px]' alt='logo'/>
         </Link>
         <div className='flex justify-between items-center gap-12'>
-          <Link to={'/about'}  className='cursor-pointer text-[#001547] text-base md:text-lg font-medium' onClick={scrollToTop}>About Us</Link>
           <HashLink smooth to="/#join_section">
             <button className='hidden md:block bg-[#004CFF] text-[#FFFFFF] font-semibold text-base px-5 py-3 rounded-lg'>Join the Waitlist!</button>
           </HashLink>
